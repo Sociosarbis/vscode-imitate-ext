@@ -1,0 +1,5 @@
+{
+  "configuration.title": "Vscode Imitate Ext",
+  "vscode-imitate-ext.xlog.private-key.title": "xlog解密私钥",
+  "vscode-imitate-ext.xlog.private-key.description": "xlog解密私钥"
+}

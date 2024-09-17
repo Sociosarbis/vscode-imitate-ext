@@ -1,0 +1,29 @@
+{
+  "name": "@sociosarbis/vscode-ext-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "./dist/index.js",
+  "bin": {
+    "markdown-language-server": "./bin/markdown-language-server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@volar/language-core": "^2.3.4",
+    "@volar/language-server": "^2.3.4",
+    "@volar/language-service": "^2.3.4",
+    "volar-service-css": "^0.0.54",
+    "volar-service-html": "^0.0.54",
+    "vscode-html-languageservice": "^5.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vscode-uri": "^3.0.8"
+  }
+}

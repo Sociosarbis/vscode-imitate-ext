@@ -1,0 +1,29 @@
+{
+  "scopeName": "source.ts-inject",
+  "injectionSelector": "L:meta.function.ts",
+  "patterns": [
+    {
+      "name": "css.ts-inject",
+      "begin": "css(`)",
+      "beginCaptures": {
+        "0": {
+          "name": "entity.name.function.ts-inject"
+        },
+        "1": {
+          "name": "punctuation.definition.string.begin.ts-inject"
+        }
+      },
+      "end": "`",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.ts-inject"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.css"
+        }
+      ]
+    }
+  ]
+}

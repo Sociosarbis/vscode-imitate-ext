@@ -1,0 +1,54 @@
+{
+  "name": "vscode-imitate-ext",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "./packages/client/dist/extension.js",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onLanguage:markdown",
+    "onFileSystem:file"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "source.ts-inject",
+        "path": "./syntaxes/ts-inject.json",
+        "embeddedLanguages": {
+          "source.css": "css"
+        },
+        "injectTo": [
+          "source.ts"
+        ],
+        "tokenTypes": {
+          "css.ts-inject": "other"
+        }
+      }
+    ],
+    "typescriptServerPlugins": [
+      {
+        "name": "@sociosarbis/typescript-plugin",
+        "enableForWorkspaceTypeScriptVersions": true
+      }
+    ],
+    "configuration": {
+      "title": "%configuration.title%",
+      "properties": {
+        "vscode-imitate-ext.xlog.private-key": {
+          "title": "%vscode-imitate-ext.xlog.private-key.title%",
+          "description": "%vscode-imitate-ext.xlog.private-key.description%",
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build:ts-plugin": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

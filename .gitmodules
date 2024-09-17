@@ -1,0 +1,3 @@
+[submodule "packages/tencent-mars-xlog-rust"]
+	path = packages/tencent-mars-xlog-rust
+	url = git@github.com:Sociosarbis/tencent-mars-xlog-rust.git
