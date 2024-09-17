@@ -11,7 +11,7 @@
         "--folder-uri=${workspaceRoot}/packages/tencent-mars-xlog-rust/sample_data",
         "--extensionDevelopmentPath=${workspaceRoot}"
       ],
-      "outFiles": ["${workspaceRoot}/packages/client/dist/*.js"]
+      "outFiles": ["${workspaceRoot}/dist/client.js"]
     }
   ]
 }

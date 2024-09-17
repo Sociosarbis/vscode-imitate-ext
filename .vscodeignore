@@ -1,0 +1,4 @@
+sample/**
+src/**
+packages/**
+!node_modules/@sociosarbis/typescript-plugin/**

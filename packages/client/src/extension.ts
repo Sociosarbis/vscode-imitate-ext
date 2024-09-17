@@ -7,7 +7,7 @@ import { XLogTextContentProvider } from './provider/xlog'
 let client: lsp.BaseLanguageClient | undefined
 
 export async function activate(context: vscode.ExtensionContext) {
-  const serverModule = vscode.Uri.joinPath(context.extensionUri, 'packages/client/node_modules', '@sociosarbis/vscode-ext-server', 'dist', 'index.js')
+  const serverModule = vscode.Uri.joinPath(context.extensionUri, 'server.js')
   const serverOptions: lsp.ServerOptions = {
     run: {
       module: serverModule.fsPath,
