@@ -3,8 +3,12 @@
   "name": "vscode-imitate-ext",
   "version": "1.0.0",
   "description": "",
-  "author": "",
-  "license": "ISC",
+  "author": "sociosarbis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sociosarbis/vscode-imitate-ext.git"
+  },
   "keywords": [],
   "main": "./dist/client.js",
   "engines": {
